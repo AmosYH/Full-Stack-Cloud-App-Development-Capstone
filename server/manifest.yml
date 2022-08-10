@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: FullStackCloudApp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: amosyh.apic.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: FullStackCloudApp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: amosyh.apic.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
