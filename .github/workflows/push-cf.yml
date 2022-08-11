@@ -38,6 +38,9 @@ jobs:
       - name: Target CF
         run: ibmcloud target --cf-api https://api.$IBM_CLOUD_REGION.cf.cloud.ibm.com -r $IBM_CLOUD_REGION -o $IBM_CLOUD_ORG -s $IBM_CLOUD_SPACE
         shell: bash
+      - name: Target Space
+        run: ibmcloud target -s djangoserver-space
+        shell: bash
       - name: List all applications
         run: ibmcloud cf apps
         shell: bash
