@@ -30,6 +30,7 @@ APPEND_SLASH = True
 ALLOWED_HOSTS = ["localhost", "amosyh.us-south.cf.appdomain.cloud"]
 
 
+CSRF_TRUSTED_ORIGINS = ['amosyh.us-south.cf.appdomain.cloud', "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
