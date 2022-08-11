@@ -1,11 +1,11 @@
   applications:
-  - name: FullStackCloudApp
+  - name: FullStackApp
     routes:
-      - route: amosyh.apic.mybluemix.net
+      - route: amosyh.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: FullStackCloudApp-nginx
+  - name: FullStackApp-nginx
     routes:
-      - route: amosyh.apic.mybluemix.net/static
+      - route: amosyh.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
